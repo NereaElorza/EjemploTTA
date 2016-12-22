@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/exercise"
+        android:text="@string/eunciado_ejercicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/button_send_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ejercicio1"
+        android:onClick="sendFile"/>
+
+    <Button
+        android:id="@+id/button_take_piture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ejercicio2"
+        android:onClick="takePicture"/>
+    <Button
+        android:id="@+id/button_record_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ejercicio3"
+        android:onClick="recordAudio"/>
+    <Button
+        android:id="@+id/button_record_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ejercicio4"
+        android:onClick="recordVideo"/>
+
+
+</LinearLayout>
