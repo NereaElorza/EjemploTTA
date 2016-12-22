@@ -3,4 +3,26 @@
     <string name="user">User</string>
     <string name="passwd_label">Contraseña</string>
     <string name="passwd_edit">Introduce password</string>
+    <string name="test_layout">Layout</string>
+    <string name="button_send_test">Send</string>
+    <string name="button_send">Enviar</string>
+    <string name="menu0">Bienvenido John Doe</string>
+    <string name="menu">Leccion1:Introducción a Android</string>
+
+    <string name="login_error">Error de acceso</string>
+    <string name="login_bien">acceso</string>
+
+
+    <string name="enunciado">¿Cual de las siguientes opciones NO se indica en el fichero de manifiesto de la app?</string>
+    <string name="radioButton">Version de la aplicacion</string>
+    <string name="radioButton2">Listado de componentes de la aplicacion</string>
+    <string name="radioButton3">Opciones del menu de ajustes</string>
+    <string name="radioButton4">Nivel minimo de la API Android requerida</string>
+    <string name="radioButton5">Nombre del paquete java de la aplicacion</string>
+
+    <string name="eunciado_ejercicio">Explica cómo aplicarías el patrón de diseño MVC en el desarrollo de una app para Android</string>
+    <string name="ejercicio1">SUBIR FICHERO</string>
+    <string name="ejercicio2">SACAR FOTO</string>
+    <string name="ejercicio3">GRABAR AUDIO</string>
+    <string name="ejercicio4">GRABAR VIDEO</string>
 </resources>
