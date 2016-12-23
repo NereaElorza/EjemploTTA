@@ -11,6 +11,7 @@
     <string name="test_layout">Layout</string>
     <string name="button_send_test">Send</string>
     <string name="button_send">Enviar</string>
+    <string name="button_advise">Ayuda</string>
     <string name="menu0">Bienvenido John Doe</string>
     <string name="menu">Leccion1:Introducción a Android</string>
 
