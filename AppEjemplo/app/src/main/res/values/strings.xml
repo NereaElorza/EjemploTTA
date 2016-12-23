@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">AppEjemplo</string>
+    <string name="app_name">Alumno de TTA</string>
+    <string name="app_name_menu">Evaluación de TTA</string>
+    <string name="app_name_test">Nuevo Test</string>
+    <string name="app_name_ejercicio">Nuevo Ejercicio</string>
+
+
     <string name="user">User</string>
     <string name="passwd_label">Contraseña</string>
     <string name="passwd_edit">Introduce password</string>
@@ -14,11 +19,11 @@
 
 
     <string name="enunciado">¿Cual de las siguientes opciones NO se indica en el fichero de manifiesto de la app?</string>
-    <string name="radioButton">Version de la aplicacion</string>
-    <string name="radioButton2">Listado de componentes de la aplicacion</string>
-    <string name="radioButton3">Opciones del menu de ajustes</string>
-    <string name="radioButton4">Nivel minimo de la API Android requerida</string>
-    <string name="radioButton5">Nombre del paquete java de la aplicacion</string>
+    <string name="radioButton0">Version de la aplicacion</string>
+    <string name="radioButton1">Listado de componentes de la aplicacion</string>
+    <string name="radioButton2">Opciones del menu de ajustes</string>
+    <string name="radioButton3">Nivel minimo de la API Android requerida</string>
+    <string name="radioButton4">Nombre del paquete java de la aplicacion</string>
 
     <string name="eunciado_ejercicio">Explica cómo aplicarías el patrón de diseño MVC en el desarrollo de una app para Android</string>
     <string name="ejercicio1">SUBIR FICHERO</string>

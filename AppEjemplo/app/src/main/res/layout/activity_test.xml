@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/test_layout"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    >
+    tools:context="appejemplo.tta.intel.ehu.eus.appejemplo.test">
+
     <TextView
         android:text="@string/enunciado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-   <!-- <RadioGroup
-        android:id="@+id/test_choices"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:text="hola"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
-
-    -->
-
     <RadioGroup
+         android:id="@+id/test_choices"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+         <TextView
+             android:text="hola"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+     </RadioGroup>
+
+
+
+    <!--<RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -52,7 +53,7 @@
             android:layout_height="wrap_content"
             android:text="@string/radioButton5"
             android:id="@+id/radioButton5" />
-    </RadioGroup>
+    </RadioGroup>-->
 
     <Button
         android:id="@+id/button_send_test"
