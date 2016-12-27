@@ -26,9 +26,13 @@
     <string name="radioButton3">Nivel minimo de la API Android requerida</string>
     <string name="radioButton4">Nombre del paquete java de la aplicacion</string>
 
+    <string name="TextAyuda">The manifest describes the components of aplication: the activities, services, broadcast receivers, and content providers that the classes that implement each of the components and publishes their capabilities (for example, which Intent messages they can handle). These declarations let the Android system know what the components are and under what connditions they can be launched</string>
+
     <string name="eunciado_ejercicio">Explica cómo aplicarías el patrón de diseño MVC en el desarrollo de una app para Android</string>
     <string name="ejercicio1">SUBIR FICHERO</string>
     <string name="ejercicio2">SACAR FOTO</string>
     <string name="ejercicio3">GRABAR AUDIO</string>
     <string name="ejercicio4">GRABAR VIDEO</string>
+
+
 </resources>
