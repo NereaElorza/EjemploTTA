@@ -91,7 +91,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
 
     //ayuda web
     public void showHtml (View view){
-        LinearLayout layout = (LinearLayout)findViewById(R.id.test_layout);
+        LinearLayout layout = (LinearLayout)findViewById(R.id.test_choices);
         //String advise="<html><body><p>Mensaje de Ayuda</p></body></html>";
         String advise ="https://www.google.es/?gws_rd=ssl";
         if(advise.substring(0,10).contains("://")) {
@@ -112,7 +112,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
     public void showVideo (View v){
         LinearLayout layout = (LinearLayout)findViewById(R.id.test_layout);
 
-        String advise = "u017633.ehu.eus:28080/static/ServidorTta/AndroidManifest.mp4";
+        String advise = "http://u017633.ehu.eus:28080/static/ServidorTta/AndroidManifest.mp4";
         VideoView video = new VideoView(this);
         video.setVideoURI(Uri.parse(advise));
 
@@ -126,8 +126,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
             }
             @Override
             public boolean dispatchKeyEvent (KeyEvent event){
-                if(event.getKeyCode() == KeyEvent.KEYCODE_BACK)
-                    finish();
+                if(event.getKeyCode() == KeyEvent.KEYCODE_BACK) finish();
                 return super.dispatchKeyEvent(event);
             }
         };
@@ -135,7 +134,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
         video.setMediaController(controller);
 
         layout.addView(video);
-        video.start();
+        //video.start();
 
     }
 

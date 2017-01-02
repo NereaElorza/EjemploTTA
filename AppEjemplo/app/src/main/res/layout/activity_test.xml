@@ -64,12 +64,12 @@
         android:layout_height="wrap_content"
         android:text="@string/TextAyuda"
         android:visibility="invisible"/>
-    <VideoView
-        android:id="@+id/VideoView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        />
+    <!--  <VideoView
+          android:id="@+id/VideoView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          />-->
 
     <!--<WebView
         android:id="@+id/web"
