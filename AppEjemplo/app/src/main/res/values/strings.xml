@@ -34,5 +34,9 @@
     <string name="ejercicio3">GRABAR AUDIO</string>
     <string name="ejercicio4">GRABAR VIDEO</string>
 
+    <string name="no_camera">NO EXISTE CAMARA</string>
+    <string name="no_app">No app</string>
+    <string name="no_micro">no micro</string>
+
 
 </resources>

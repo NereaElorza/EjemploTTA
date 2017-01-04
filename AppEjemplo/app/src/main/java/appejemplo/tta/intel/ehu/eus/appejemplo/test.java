@@ -18,6 +18,8 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import java.io.IOException;
+
 
 public class test extends AppCompatActivity implements View.OnClickListener{
 
@@ -116,7 +118,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
         VideoView video = new VideoView(this);
         video.setVideoURI(Uri.parse(advise));
 
-        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         video.setLayoutParams(params);
 
         MediaController controller = new MediaController(this){
@@ -134,12 +136,25 @@ public class test extends AppCompatActivity implements View.OnClickListener{
         video.setMediaController(controller);
 
         layout.addView(video);
-        //video.start();
+        video.start();
 
     }
 
     //ayuda audio
     public void showAudio (View v){
+        LinearLayout layout = (LinearLayout)findViewById(R.id.test_layout);
+
+        String advise = "http://u017633.ehu.eus:28080/static/ServidorTta/AndroidManifest.mp4";
+        AudioPlayer audio = new AudioPlayer(v);
+        MediaPlayer mp = new MediaPlayer();
+       //mp.setOnPreparedListener(audio);
+        try {
+            audio.setAudioUri(Uri.parse(advise));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        audio.onPrepared(mp);
+        audio.start();
 
     }
 }
