@@ -4,9 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
-public class menu extends AppCompatActivity {
+public class MenuActivity extends AppCompatActivity {
 
     public final static String EXTRA_LOGIN = "";
 
@@ -21,11 +20,11 @@ public class menu extends AppCompatActivity {
     }
 
     public void test(View view) {
-        Intent intent = new Intent(this, test.class);
+        Intent intent = new Intent(this, TestActivity.class);
         startActivity(intent);//pasa a la pantalla donde se ha expecificado el intent
     }
     public void ejercicio(View view) {
-        Intent intent = new Intent(this, exercise.class);
+        Intent intent = new Intent(this, ExerciseActivity.class);
         startActivity(intent);//pasa a la pantalla donde se ha expecificado el intent
     }
 }

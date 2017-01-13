@@ -18,17 +18,19 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import org.json.JSONObject;
+
 import java.io.IOException;
 
 
-public class test extends AppCompatActivity implements View.OnClickListener{
+public class TestActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        String cadena[]={"Version de la aplicacion","Listado de componentes de la aplicacion","Opciones del menu de ajustes","Nivel minimo de la API Android requerida","Nombre del paquete java de la aplicacion"};
+        String cadena[]={"Version de la aplicacion","Listado de componentes de la aplicacion","Opciones del MenuActivity de ajustes","Nivel minimo de la API Android requerida","Nombre del paquete java de la aplicacion"};
         RadioGroup group = (RadioGroup)findViewById(R.id.test_choices);
         for(int i=0; i<5; i++){
             RadioButton radio = new RadioButton(this);
@@ -102,7 +104,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
             startActivity(intent);
         }else{//NO VA
             WebView web = new WebView(this);
-            web.loadData(advise,"test/html",null);
+            web.loadData(advise,"TestActivity/html",null);
             web.setBackgroundColor(Color.TRANSPARENT);
             web.setLayerType(WebView.LAYER_TYPE_SOFTWARE, null);
             layout.addView(web);
@@ -157,6 +159,7 @@ public class test extends AppCompatActivity implements View.OnClickListener{
         audio.start();
 
     }
+
 }
 
 

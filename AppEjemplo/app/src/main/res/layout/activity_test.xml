@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="appejemplo.tta.intel.ehu.eus.appejemplo.test">
+    tools:context=".TestActivity">
 
     <TextView
         android:text="@string/enunciado"

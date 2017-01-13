@@ -14,7 +14,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 
-public class exercise extends AppCompatActivity {
+public class ExerciseActivity extends AppCompatActivity {
 
     final int READ_REQUEST_CODE=1;
     final int PICTURE_REQUEST_CODE=2;
@@ -48,6 +48,7 @@ public class exercise extends AppCompatActivity {
                 Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
         }
     }
+    //funciona
     public void recordAudio(View v){
         if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_MICROPHONE))
             Toast.makeText(this,R.string.no_micro, Toast.LENGTH_SHORT).show();
@@ -71,6 +72,8 @@ public class exercise extends AppCompatActivity {
                 Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
         }
     }
+
+
     /*@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         if(resultCode != Activity.RESULT_OK)
