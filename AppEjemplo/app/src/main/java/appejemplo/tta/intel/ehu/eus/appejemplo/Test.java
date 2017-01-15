@@ -5,16 +5,20 @@ package appejemplo.tta.intel.ehu.eus.appejemplo;
  */
 public class Test {
 
-    public Test(){
+    private String wording;
+    private String choice;
 
+    public Test(String wording, String choice){
+        this.choice=choice;
+        this.wording=wording;
     }
 
-    public void getWorking(){   //no sera void
-
+    public String getWording(){ //enunciado
+        return wording;
     }
 
-    public void getChoice(){    //no sera void
-
+    public String  getChoice(){ //respestas
+        return choice;
     }
 }
 

@@ -9,6 +9,9 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
 
+    private Data server;
+    private String dni;
+    private User data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +29,21 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
-    public boolean authenticate(String login, String passwd){
-        return true;
+    public boolean authenticate(String login, String passwd){return true;}
+
+    public void user(View view){
+        new ProgressTask<User>(this){
+            @Override
+            protected User work()throws Exception{
+                return server.user(dni);
+            }
+
+            @Override
+            protected void onFinish(User result) {
+                data.getName();
+
+            }
+        }.execute();
     }
 
 }
