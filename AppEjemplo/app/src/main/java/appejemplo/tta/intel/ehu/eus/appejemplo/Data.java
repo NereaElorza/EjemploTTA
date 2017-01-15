@@ -20,6 +20,9 @@ public class Data {
     private int nextTest;
     private int nextExercise;
 
+    private String advise;
+    private String answer;
+
     private String wording;
    // private String choice;
 
@@ -44,7 +47,12 @@ public class Data {
         JSONObject json = restClient.getJson(String.format("getTest?id=1"));
         wording = json.getString("wording");
         JSONArray array = new JSONArray();
-        //choice es un array
+
+        for(int i=0; i<array.length(); i++){
+            JSONObject item = array.getJSONObject(i);
+            Choice choice = new Choice(id,advise,answer);
+            //choice = json.getJSONArray();
+        }
 
         Test t = new Test(wording,wording);//wording y choice
         return t;
