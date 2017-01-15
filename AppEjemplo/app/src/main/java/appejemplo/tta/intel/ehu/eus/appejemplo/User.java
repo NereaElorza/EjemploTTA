@@ -19,11 +19,24 @@ public class User {
         this.nextTest=nextTest;
         this.nextExercise=nextExercise;
     }
-    public void setId(){}
-    public void setName(){}
-    public void setLessonNum(){}
-    public void setLessonTit(){}
-    public void setNextTest(){}
+    public int getId(){
+        return id;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getLessonNum(){
+        return lessonNum;
+    }
+    public String getLessonTit(){
+        return lessonTit;
+    }
+    public int getNextTest(){
+        return nextTest;
+    }
+    public int getNextExercise(){
+        return nextExercise;
+    }
 
 
 }
